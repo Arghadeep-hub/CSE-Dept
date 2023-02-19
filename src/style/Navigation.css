@@ -169,7 +169,7 @@ article .search .input-group-text {
 }
 @media screen and (max-width: 430px) {
   nav.mobile .logo img {
-    width: 100%;
+    width: 65px;
     object-fit: cover;
   }
 }

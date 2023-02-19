@@ -1,10 +1,10 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap';
 import "../style/Navigation.css";
-
 import logoImg from "../img/Logo.png";
 import searchImg from "../img/search.svg";
 import userImg from "../img/user.svg";
+import Hamburger from 'hamburger-react'
+import { Col, Container, Row } from 'react-bootstrap';
 
 
 function Navigation() {
@@ -15,9 +15,6 @@ function Navigation() {
                 <div id="top-bar" className="owl-carousel owl-theme">
                     <div className="item">
                         <p>Click on the <b>Placement</b> option for go to Placement page. Work is in progress. Our developers are working on it.</p>
-                    </div>
-                    <div className="item">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate architecto assumenda amet necessitatibus illum totam</p>
                     </div>
                 </div>
             </div>
@@ -42,8 +39,8 @@ function Navigation() {
             <nav className="mobile">
                 <Container>
                     <Row className='align-items-center'>
-                        <Col xs={4} className="logo-menu">
-
+                        <Col xs={4}>
+                            <Hamburger direction="right" rounded label="Show menu" />
                         </Col>
                         <Col xs={4} className="d-flex justify-content-center">
                             <a className="logo" href="/"><img src={logoImg} alt="makaut_logo" loading='lazy' draggable="false" /></a>
