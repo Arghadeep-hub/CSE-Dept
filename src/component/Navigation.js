@@ -2,8 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import "../style/Navigation.css";
 
-import logoImg from "../img/logo.png";
-import menuImg from "../img/menu.svg";
+import logoImg from "../img/Logo.png";
 import searchImg from "../img/search.svg";
 import userImg from "../img/user.svg";
 
@@ -44,7 +43,7 @@ function Navigation() {
                 <Container>
                     <Row className='align-items-center'>
                         <Col xs={4} className="logo-menu">
-                            <a data-trigger="card_mobile" className="menu-icon" href="#!"><img src={menuImg} alt="menu" loading='lazy' draggable="false" /></a>
+
                         </Col>
                         <Col xs={4} className="d-flex justify-content-center">
                             <a className="logo" href="/"><img src={logoImg} alt="makaut_logo" loading='lazy' draggable="false" /></a>
@@ -62,20 +61,20 @@ function Navigation() {
                 <Container fluid>
                     <Row className="align-items-center">
                         <Col xs={2} className="d-flex justify-content-center align-items-center">
-                            <img src={logoImg} alt="Logo" />
+                            <img src={logoImg} alt="Logo" className='logo' />
                             <h6 className='m-0 p-0 w-100 text-center text-secondary'>CSE Depertment</h6>
                         </Col>
                         <Col xs={4} className="search">
                             <div className="input-group">
                                 <input type="text" className="form-control" />
-                                <button className="input-group-text"><img src={searchImg} alt="..." /></button>
+                                <button className="input-group-text"><img src={searchImg} alt="search" /></button>
                             </div>
                         </Col>
                         <Col xs={6} className="last-icons">
                             <ul>
                                 <li><a href="#!">New Release</a></li>
                                 <li><a href="#!">Best Sellers</a></li>
-                                <li><a href="singleProduct.html">Shop</a></li>
+                                <li><a href="#!">Shop</a></li>
                                 <li><a href="#!">Custom</a></li>
                                 <li><a href="#!">Customer Service</a></li>
                             </ul>
