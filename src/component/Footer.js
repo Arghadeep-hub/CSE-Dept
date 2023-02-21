@@ -45,7 +45,7 @@ function Footer() {
                     <Col md={4} xs={12} className="p-2 overview">
                         <h6>Welcome To</h6>
 
-                        <p className="overview-para">Maulana Abul Kalam Azad University of Technology, West Bengal Formerly West Bengal University of Technology</p>
+                        <p className="overview-para">The <b>Department of Computer Science & Engineering</b>, under the School of Engineering & Technology offers B.Tech. in Computer Science & Engineering (CSE), MTech in Computer Science and Engineering and M.Tech. in Software Engineering. All the programmes are approved by AICTE.</p>
                     </Col>
                     {RouteNav.map((params, id) => {
                         const { names, subLinks } = params;
@@ -81,7 +81,7 @@ function Footer() {
                     />
                 </Row>
                 <div className="footer-text">
-                    <p>&copy; Copyright {new Date().getFullYear()} By CSE Depertment | All right reserved | Design and Developed by REPL Devs.</p>
+                    <p>&copy; Copyright {new Date().getFullYear()} By CSE Depertment | All right reserved | Design and Developed by <a href="https://arghadeep.in" target="_blank" rel="noreferrer" className='fw-bold'>Argha</a>.</p>
                 </div>
             </Container>
         </footer>
