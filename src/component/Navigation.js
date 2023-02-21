@@ -5,7 +5,17 @@ import searchImg from "../img/search.svg";
 import userImg from "../img/user.svg";
 import Hamburger from 'hamburger-react'
 import { Col, Container, Row } from 'react-bootstrap';
-
+const navContent = [
+    { name: "home", route: "/" },
+    { name: "about", route: "/" },
+    { name: "programmes", route: "/" },
+    { name: "admission", route: "/" },
+    { name: "faculty", route: "/" },
+    { name: "fee", route: "/" },
+    { name: "research", route: "/" },
+    { name: "facilities", route: "/" },
+    { name: "contact", route: "/" },
+]
 
 function Navigation() {
     return (
@@ -61,20 +71,18 @@ function Navigation() {
                             <img src={logoImg} alt="Logo" className='logo' />
                             <h6 className='m-0 p-0 w-100 text-center text-secondary'>CSE Depertment</h6>
                         </Col>
-                        <Col xs={4} className="search">
+                        <Col xs={3} className="search">
                             <div className="input-group">
-                                <input type="text" className="form-control" />
+                                <input type="text" placeholder='Search' className="form-control" />
                                 <button className="input-group-text"><img src={searchImg} alt="search" /></button>
                             </div>
                         </Col>
-                        <Col xs={6} className="last-icons">
-                            <ul>
-                                <li><a href="#!">New Release</a></li>
-                                <li><a href="#!">Best Sellers</a></li>
-                                <li><a href="#!">Shop</a></li>
-                                <li><a href="#!">Custom</a></li>
-                                <li><a href="#!">Customer Service</a></li>
-                            </ul>
+                        <Col xs={7} className="last-icons">
+                            <ul>{
+                                navContent.map((items, id) => {
+                                    return <li><a href={items.route}>{items.name}</a></li>
+                                })
+                            }</ul>
                         </Col>
                     </Row>
                 </Container>
