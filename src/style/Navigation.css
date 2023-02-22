@@ -91,6 +91,12 @@ nav.mobile {
 nav {
   padding: 20px 0;
 }
+nav.large {
+  position: absolute;
+  top: 7%;
+  z-index: 1;
+  padding: 0 !important;
+}
 nav img.logo {
   width: 80px;
   object-fit: fill;
@@ -108,11 +114,11 @@ nav ul li {
   margin: 0 10px;
 }
 nav ul li a {
-  color: #000;
+  color: #141414;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 13.5px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
 }
 nav ul li a:hover {
   color: var(--main-bal-color);

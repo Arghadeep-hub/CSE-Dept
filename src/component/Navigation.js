@@ -6,7 +6,7 @@ import userImg from "../img/user.svg";
 import Hamburger from 'hamburger-react'
 import { Col, Container, Row } from 'react-bootstrap';
 const navContent = [
-    { name: "home", route: "/" },
+    { name: "home", route: "#!" },
     { name: "about", route: "/" },
     { name: "programmes", route: "/" },
     { name: "admission", route: "/" },
@@ -80,7 +80,7 @@ function Navigation() {
                         <Col xs={7} className="last-icons">
                             <ul>{
                                 navContent.map((items, id) => {
-                                    return <li><a href={items.route}>{items.name}</a></li>
+                                    return <li key={id}><a href={items.route}>{items.name}</a></li>
                                 })
                             }</ul>
                         </Col>
